@@ -36,10 +36,21 @@ const HomeNav = () => {
             </div>
             <hr />
             <div className="nav_bottom">
-              <i class="fa fa-brands fa-square-facebook fa-2x"></i>
-              <i class="fa fa-brands fa-linkedin fa-2x"></i>
-              <i class="fa fa-brands fa-square-github fa-2x"></i>
-              <i class="fa fa-brands fa-medium fa-2x"></i>
+              <a href="#">
+                <i class="fa fa-brands fa-square-facebook fa-2x"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa fa-brands fa-linkedin fa-2x"></i>
+              </a>
+
+              <a href="https://github.com/CyberAakash">
+                <i class="fa fa-brands fa-square-github fa-2x"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa fa-brands fa-medium fa-2x"></i>
+              </a>
             </div>
           </div>
         </nav>
