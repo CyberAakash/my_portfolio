@@ -4,37 +4,14 @@ import "./navbar.css";
 
 import React from "react";
 
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 const HomeNav = () => {
-  const [show, setShow] = useState(false);
-
-  const scrollHandler = () => {
-    console.log(window.scrollY);
-    if (window.scrollY > 50) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", scrollHandler);
-
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
-
   return (
     <div>
       {/* <div className="header_innerShadow"></div> */}
       <section className="nav_bar">
-        <nav
-          style={{
-            backgroundColor: show ? "rgb(20,20,20)" : "transparent",
-          }}
-        >
+        <nav>
           <img
             className="nav_logo"
             src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
@@ -57,8 +34,12 @@ const HomeNav = () => {
                 </li>
               </ul>
             </div>
+            <hr />
             <div className="nav_bottom">
-
+              <i class="fa fa-brands fa-square-facebook fa-2x"></i>
+              <i class="fa fa-brands fa-linkedin fa-2x"></i>
+              <i class="fa fa-brands fa-square-github fa-2x"></i>
+              <i class="fa fa-brands fa-medium fa-2x"></i>
             </div>
           </div>
         </nav>

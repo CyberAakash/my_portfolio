@@ -3,29 +3,96 @@
 
 
 .nav_bar {
-    position:absolute;
-    padding: 10px;
+    position:fixed;
+    top:0;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgb(5, 5, 5) 0%, rgba(32, 32, 32, 0.4) 100%);
+    max-width: 30vw;
+    padding: 10px 40px 5px;
+    z-index: 2;
+
 }
 
 .nav_left {
-    background : #333;
+    background : rgb(20, 20, 20, 0);
     color: white;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 5px;
-    text-align: left;
+    text-align: center;
+    align-items: center;
     justify-content: space-between;
     position: relative;
 }
 
+.nav_left .nav_top {
+    z-index: 10;
+}
+
 
 .nav_logo {
-    margin: 5%;
-    width: 7vw;
-    height: 10vh;
-    border: 3px solid #333;
+    margin: 50px 5px 20px;
+    width: 15vw;
+    height: 100%;
+    border: 3px solid greenyellow;
     border-radius: 50%;
+    align-items: center;
+    padding-bottom: 3vh;
 }
+
+.nav_left .nav_links {
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.nav_left .nav_links li {
+    padding-bottom: 6vh;
+    margin: auto;
+}
+
+.nav_left .nav_links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav_left .nav_links li a:hover {
+    color: greenyellow;
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+
+}
+
+.nav_left .nav_bottom {
+    z-index: 10;
+    justify-content: center;
+    position: relative;
+    margin: 0%;
+    display: inline-block;
+}
+
+.nav_left .nav_bottom .fa {
+    color: greenyellow;
+    padding: 1vw;
+    margin: 0;
+    text-shadow: 2px 1px black;
+}
+
+
+
+
+
 
 
 
